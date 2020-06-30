@@ -1,0 +1,100 @@
+echo "Запуск первой разблокировки"
+IP_1=$(head -n1 /etc/test/ip_super_user.log)
+echo "$IP_1"
+ssh root@89.162.168.198 "/ip firewall filter set disabled=yes [find src-address=\"$IP_1\"]"
+echo "первая разблокировка окончена"
+echo "Запуск второй разблокировки"
+IP_2=$(head -n2 /etc/test/ip_super_user.log)
+echo "$IP_2"
+ssh root@89.162.168.198 "/ip firewall filter set disabled=yes [find src-address=\"$IP_2\"]"
+echo "вторая разблокировка окончена"
+echo "Запуск третей разблокировки"
+IP_3=$(head -n3 /etc/test/ip_super_user.log)
+echo "$IP_3"
+ssh root@89.162.168.198 "/ip firewall filter set disabled=yes [find src-address=\"$IP_3\"]"
+echo "третя разблокировка окончена"
+echo "Запуск четвертой блокировки"
+IP_4=$(head -n4 /etc/test/ip_super_user.log)
+echo "$IP_4"
+ssh root@89.162.168.198 "/ip firewall filter set disabled=yes [find src-address=\"$IP_4\"]"
+echo "четвертая разблокировка окончена"
+echo "Запуск пятой разблокировки"
+IP_5=$(head -n5 /etc/test/ip_super_user.log)
+echo "$IP_5"
+ssh root@89.162.168.198 "/ip firewall filter set disabled=yes [find src-address=\"$IP_5\"]"
+echo "пятая разблокировка окончена"
+echo "Запуск шестой разблокировки"
+IP_6=$(head -n6 /etc/test/ip_super_user.log)
+echo "$IP_6"
+ssh root@89.162.168.198 "/ip firewall filter set disabled=yes [find src-address=\"$IP_6\"]"
+echo "шестая разблокировка окончена"
+
+echo "Запуск седьмой разблокировки"
+IP_7=$(head -n7 /etc/test/ip_super_user.log)
+echo "$IP_7"
+ssh root@89.162.168.198 "/ip firewall filter set disabled=yes [find src-address=\"$IP_7\"]"
+echo "седьмая разблокировка окончена"
+echo "Запуск восьмой разблокировки"
+IP_8=$(head -n8 /etc/test/ip_super_user.log)
+echo "$IP_8"
+ssh root@89.162.168.198 "/ip firewall filter set disabled=yes [find src-address=\"$IP_8\"]"
+echo "восьмой разблокировка окончена"
+echo "Запуск девятой разблокировки"
+IP_9=$(head -n9 /etc/test/ip_super_user.log)
+echo "$IP_9"
+ssh root@89.162.168.198 "/ip firewall filter set disabled=yes [find src-address=\"$IP_9\"]"
+echo "Девятая разблокировка окончена"
+echo "Запуск десятой разблокировки"
+IP_10=$(head -n10 /etc/test/ip_super_user.log)
+echo "$IP_10"
+ssh root@89.162.168.198 "/ip firewall filter set disabled=yes [find src-address=\"$IP_10\"]"
+echo "десятая разблокировка окончена"
+echo "Запуск одинадцатой разблокировки"
+IP_11=$(head -n11 /etc/test/ip_super_user.log)
+echo "$IP_11"
+ssh root@89.162.168.198 "/ip firewall filter set disabled=yes [find src-address=\"$IP_11\"]"
+echo "одинадцатая разблокировка окончена"
+echo "Запуск двенадцатой разблокировки"
+IP_12=$(head -n12 /etc/test/ip_super_user.log)
+echo "$IP_12"
+ssh root@89.162.168.198 "/ip firewall filter set disabled=yes [find src-address=\"$IP_12\"]"
+echo "двенадцатая разблокировка окончена"
+IP_13=$(head -n13 /etc/test/ip_super_user.log)
+echo "$IP_13"
+ssh root@89.162.168.198 "/ip firewall filter set disabled=yes [find src-address=\"$IP_13\"]"
+echo "Тринадцатая разблокировка окончена"
+echo "Запуск четырнадцатой разблокировки"
+IP_14=$(head -n14 /etc/test/ip_super_user.log)
+echo "$IP_14"
+ssh root@89.162.168.198 "/ip firewall filter set disabled=yes [find src-address=\"$IP_14\"]"
+echo "четырнадцатая разблокировка окончена"
+echo "Запуск пятнадцатой разблокировки"
+IP_15=$(head -n15 /etc/test/ip_super_user.log)
+echo "$IP_15"
+ssh root@89.162.168.198 "/ip firewall filter set disabled=yes [find src-address=\"$IP_15\"]"
+echo "пятнадцатая разблокировка окончена"
+echo "Запуск шестьнадцатой разблокировки"
+IP_16=$(head -n16 /etc/test/ip_super_user.log)
+echo "$IP_16"
+ssh root@89.162.168.198 "/ip firewall filter set disabled=yes [find src-address=\"$IP_16\"]"
+echo "шестьнадцатой разблокировка окончена"
+echo "Запуск семнадцатой разблокировки"
+IP_17=$(head -n17 /etc/test/ip_super_user.log)
+echo "$IP_17"
+ssh root@89.162.168.198 "/ip firewall filter set disabled=yes [find src-address=\"$IP_17\"]"
+echo "семнадцатая разблокировка окончена"
+echo "Запуск восемнадцатой разблокировки"
+IP_18=$(head -n18 /etc/test/ip_super_user.log)
+echo "$IP_18"
+ssh root@89.162.168.198 "/ip firewall filter set disabled=yes [find src-address=\"$IP_18\"]"
+echo "восемнадцатая разблокировка окончена"
+echo "Запуск девятнадцатой разблокировки"
+IP_19=$(head -n19 /etc/test/ip_super_user.log)
+echo "$IP_19"
+ssh root@89.162.168.198 "/ip firewall filter set disabled=yes [find src-address=\"$IP_19\"]"
+echo "Девятнадцатая разблокировка окончена"
+echo "Запуск двадцатой разблокировки"
+IP_20=$(head -n20 /etc/test/ip_super_user.log)
+echo "$IP_20"
+ssh root@89.162.168.198 "/ip firewall filter set disabled=yes [find src-address=\"$IP_20\"]"
+echo "двадцатая разблокировка окончена"
